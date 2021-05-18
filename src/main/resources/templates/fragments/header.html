@@ -25,6 +25,9 @@
                 <li class="nav-item" th:classappend="${option == 'Plataformas'}?'active' :''" sec:authorize="hasAnyAuthority('ADMIN')">
                     <a class="nav-link" th:href="@{/plataformas/lista}">Plataformas</a>
                 </li>
+                <li class="nav-item" th:classappend="${option == 'Distribuidoras'}?'active' :''" sec:authorize="hasAnyAuthority('ADMIN')">
+                    <a class="nav-link" th:href="@{/distribuidoras}">Distribuidoras</a>
+                </li>
                 <!-- ....... -->
             </ul>
         </div>
